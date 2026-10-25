@@ -1,0 +1,24 @@
+[package]
+name = "rom-scanner"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+walkdir = { workspace = true }
+rayon = { workspace = true }
+crc32fast = { workspace = true }
+byteorder = { workspace = true }
+dirs = { workspace = true }
+regex = { workspace = true }
+uuid = { workspace = true }
+tokio = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

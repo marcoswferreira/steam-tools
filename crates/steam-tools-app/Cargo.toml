@@ -1,0 +1,29 @@
+[package]
+name = "steam-tools-app"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "steam-tools"
+path = "src/main.rs"
+
+[dependencies]
+steam-vdf = { path = "../steam-vdf" }
+rom-scanner = { path = "../rom-scanner" }
+steam-achievements = { path = "../steam-achievements" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+tokio = { workspace = true }
+parking_lot = { workspace = true }
+dirs = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

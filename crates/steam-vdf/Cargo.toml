@@ -1,0 +1,23 @@
+[package]
+name = "steam-vdf"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+byteorder = { workspace = true }
+crc32fast = { workspace = true }
+dirs = { workspace = true }
+tokio = { workspace = true }
+tokio-tungstenite = { version = "0.24", features = ["connect"] }
+futures-util = "0.3"
+reqwest = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

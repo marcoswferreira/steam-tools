@@ -1,0 +1,35 @@
+[workspace]
+members = [
+    "crates/steam-vdf",
+    "crates/rom-scanner",
+    "crates/steam-achievements",
+    "crates/steam-tools-app",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["marcoswferreira"]
+license = "GPL-3.0-or-later"
+repository = "https://github.com/marcoswferreira/steam-tools"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.40", features = ["full"] }
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+crc32fast = "1.4"
+byteorder = "1.5"
+walkdir = "2.5"
+rayon = "1.10"
+regex = "1.10"
+dirs = "5.0"
+uuid = { version = "1.10", features = ["v4", "serde"] }
+tempfile = "3.12"
+parking_lot = "0.12"
+chrono = { version = "0.4", default-features = false, features = ["std", "clock", "serde"] }
